@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image/Bureau-de-change-Aix-en-provence.-Change-cours-mirabeau.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frosted{
+    margin: 0 40 0 40;
+    width: 700px;
+    height: 650px;
+    position: relative;
+    background: inherit;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+    z-index: 1;
+    
+    color: black;
+    border-radius: 5px;
+}
+.frosted::before{
+    content: "";
+    position: absolute;
+    background: inherit;
+    inset: -20px;
+    filter: blur(5px);
+    z-index: -1;
+}
